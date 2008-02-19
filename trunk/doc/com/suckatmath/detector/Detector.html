@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Detector,com.suckatmath.detector.Detector,aspectRatio,classifier,minscale,detect,detectOnII,scanImage,setMaxDetect" name="keywords">
+<title>com.suckatmath.detector.Detector</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Detector - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">ObjectDetector</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?com/suckatmath/detector/Detector.html&amp;com/suckatmath/detector/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Detector</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Detector"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.suckatmath.detector</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Detector</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../detector/FocussedDetector.html">FocussedDetector</a></td>
+</tr>
+</table>
+<p></p>
+  A Detector applies a HaarClassifier to an Image, getting back an Array of Rectangles representing matching areas of the image.
+     <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aspectRatio">aspectRatio</a> : Number<div class="summaryTableDescription">
+   ratio of classifier height/width
+   </div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#classifier">classifier</a> : <a href="classifier/HaarClassifier.html">HaarClassifier</a>
+<div class="summaryTableDescription">
+   The classifier to use to determine whether an image area matches.</div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#minscale">minscale</a> : int<div class="summaryTableDescription">
+   size of smallest feature to find (in pixels).</div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Detector()">Detector</a>(hc:<a href="classifier/HaarClassifier.html">HaarClassifier</a> = null, md:int = 1, minscale:int = 20)</div>
+<div class="summaryTableDescription">
+   
+   </div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#detect()">detect</a>(bd:BitmapData, boundaryRect:Rectangle = null):Array</div>
+<div class="summaryTableDescription">
+   scan classifier across bd at DECREASING scales, looking for objects.</div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#detectOnII()">detectOnII</a>(ii:<a href="classifier/IntegralImage.html">IntegralImage</a>, boundaryrect:Rectangle = null):Array</div>
+<div class="summaryTableDescription">
+   Just like detect, but allows re-use of Integral Image for different detectors on the same image
+   
+   scan classifier across ii at DECREASING scales, looking for objects.</div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMaxDetect()">setMaxDetect</a>(md:int):void</div>
+<div class="summaryTableDescription">
+   setter for maxDetect.</div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#scanImage()">scanImage</a>(classifier:<a href="classifier/HaarClassifier.html">HaarClassifier</a>, ii:<a href="classifier/IntegralImage.html">IntegralImage</a>, rect:Rectangle, boundaryrect:Rectangle, toreturn:Array):void</div>
+<div class="summaryTableDescription">
+   scans a classifier at a particular scale across an image from left to right and top to bottom
+   stores matches in input toreturn array.</div>
+</td><td class="summaryTableOwnerCol">Detector</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="aspectRatio"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aspectRatio</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aspectRatio:Number</code><p>
+   ratio of classifier height/width
+   </p></div>
+<a name="classifier"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">classifier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var classifier:<a href="classifier/HaarClassifier.html">HaarClassifier</a></code><p>
+   The classifier to use to determine whether an image area matches.
+   </p></div>
+<a name="minscale"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">minscale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var minscale:int</code><p>
+   size of smallest feature to find (in pixels).  
+   Higher values give faster performance, lower give more thorough.
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Detector()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Detector</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Detector(hc:<a href="classifier/HaarClassifier.html">HaarClassifier</a> = null, md:int = 1, minscale:int = 20)</code><p>
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">hc</span>:<a href="classifier/HaarClassifier.html">HaarClassifier</a></code> (default = <code>null</code>)<code></code> &mdash;  classifier determining feature(s) to recognize
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">md</span>:int</code> (default = <code>1</code>)<code></code> &mdash;  maximum number of matching rectangles to return - May not correspond to actual distinct features as same feature
+   can be detected at multiple enclosing rectangles
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">minscale</span>:int</code> (default = <code>20</code>)<code></code> &mdash; minimum of smallest dimension of classifier.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="detect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">detect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function detect(bd:BitmapData, boundaryRect:Rectangle = null):Array</code><p>
+   scan classifier across bd at DECREASING scales, looking for objects.
+   Decreasing scales allow bigger (probably closer) objects to have priority.
+   Will find at most maxDetect objects.  If maxDetect == -1, find ALL.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">bd</span>:BitmapData</code> &mdash; BitmapData on which to search
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">boundaryRect</span>:Rectangle</code> (default = <code>null</code>)<code></code> &mdash; a rectangle describing the area of the image in which to look.  If null, entire image is used
+   
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; Array of Rectangles describing areas where objects were found.
+   </td>
+</tr>
+</table>
+</div>
+<a name="detectOnII()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">detectOnII</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function detectOnII(ii:<a href="classifier/IntegralImage.html">IntegralImage</a>, boundaryrect:Rectangle = null):Array</code><p>
+   Just like detect, but allows re-use of Integral Image for different detectors on the same image
+   
+   scan classifier across ii at DECREASING scales, looking for objects.
+   Decreasing scales allow bigger (probably closer) objects to have priority.
+   Will find at most maxDetect faces.  If maxDetect == -1, find ALL.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">ii</span>:<a href="classifier/IntegralImage.html">IntegralImage</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">boundaryrect</span>:Rectangle</code> (default = <code>null</code>)<code></code> &mdash; - a rectangle describing the area of the image in which to look.  If null, entire image is used
+   
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; Array of Rectangles describing areas where objects were found.
+   </td>
+</tr>
+</table>
+</div>
+<a name="scanImage()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scanImage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function scanImage(classifier:<a href="classifier/HaarClassifier.html">HaarClassifier</a>, ii:<a href="classifier/IntegralImage.html">IntegralImage</a>, rect:Rectangle, boundaryrect:Rectangle, toreturn:Array):void</code><p>
+   scans a classifier at a particular scale across an image from left to right and top to bottom
+   stores matches in input toreturn array.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">classifier</span>:<a href="classifier/HaarClassifier.html">HaarClassifier</a></code> &mdash; HaarClassifier
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ii</span>:<a href="classifier/IntegralImage.html">IntegralImage</a></code> &mdash; IntegralImage
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rect</span>:Rectangle</code> &mdash; Rectangle describing sliding classifier window - x,y will be changed
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">boundaryrect</span>:Rectangle</code> &mdash; Rectangle describing search window
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">toreturn</span>:Array</code> &mdash; Array in which to store matches
+   </td>
+</tr>
+</table>
+</div>
+<a name="setMaxDetect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMaxDetect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMaxDetect(md:int):void</code><p>
+   setter for maxDetect.  Set to -1 for unlimited.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">md</span>:int</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
