@@ -1,0 +1,11 @@
+= Classifiers =
+
+Deface, like OpenCV, requires xml files describing classifiers which determine whether an image matches or not.  Why aren't any of them here?  Because each of the classifiers from OpenCV already has a license embedded into it, and I didn't know whether it was okay to rehost them as part of another project.  The good news is that most of them say it's okay to redistribute, so they are linked below.
+
+haarcascade_frontalface_alt.xml is the one used for most testing in development.
+
+= External Links =
+
+[http://www.intel.com/technology/computing/opencv/ OpenCV] - get it right from the horse's mouth
+
+[http://alereimondo.no-ip.org/OpenCV/34 misc classifiers] - Some seem to work, some don't.
