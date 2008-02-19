@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="HaarClassifierFeature,com.suckatmath.detector.classifier.HaarClassifierFeature,inv_window_area,leftIdx,leftval,parent,rects,rightIdx,rightval,threshold,tilted,evaluateSubImage,fromXML,setScale,toXMLString" name="keywords">
+<title>com.suckatmath.detector.classifier.HaarClassifierFeature</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'HaarClassifierFeature - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">ObjectDetector</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/suckatmath/detector/classifier/HaarClassifierFeature.html&amp;com/suckatmath/detector/classifier/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;HaarClassifierFeature</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class HaarClassifierFeature"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.suckatmath.detector.classifier</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class HaarClassifierFeature</td>
+</tr>
+</table>
+<p></p>
+  A Haar Classifier Feature is an element of a HaarClassifierTree.
+  
+  As a Feature, it has rects, threshold, leftval, rightval, left index, right index
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inv_window_area">inv_window_area</a> : Number<div class="summaryTableDescription">
+   inverse of scaled window area.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#leftIdx">leftIdx</a> : int<div class="summaryTableDescription">
+   index in parent of left child feature.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#leftval">leftval</a> : Number<div class="summaryTableDescription">
+   Number to return if sums are less than threshold.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#parent">parent</a> : <a href="../classifier/HaarClassifierTree.html">HaarClassifierTree</a>
+<div class="summaryTableDescription">
+   parent HaarClassifierTree.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rects">rects</a> : Array<div class="summaryTableDescription">
+   Array of HaarRect
+   </div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rightIdx">rightIdx</a> : int<div class="summaryTableDescription">
+   index in parent of right child feature.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rightval">rightval</a> : Number<div class="summaryTableDescription">
+   Number to return if sums are more than threshold.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#threshold">threshold</a> : Number<div class="summaryTableDescription">
+   threshold to compare sums against
+   </div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#tilted">tilted</a> : Boolean<div class="summaryTableDescription">
+   whether this feature is "tilted" 45 degrees
+   </div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#HaarClassifierFeature()">HaarClassifierFeature</a>()</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#evaluateSubImage()">evaluateSubImage</a>(ii:<a href="IntegralImage.html">IntegralImage</a>, r:Rectangle, vnorm:Number):Number</div>
+<div class="summaryTableDescription">
+   evaluates this feature in the context of a search window.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fromXML()">fromXML</a>(xml:XML):<a href="../classifier/HaarClassifierFeature.html">HaarClassifierFeature</a>
+</div>
+<div class="summaryTableDescription">[static]
+   read a feature from an xml node.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setScale()">setScale</a>(w:int, h:int, r:Rectangle):void</div>
+<div class="summaryTableDescription">
+   Scales this feature to the new size of a window
+   </div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toXMLString()">toXMLString</a>():String</div>
+<div class="summaryTableDescription">
+   serialize this feature to an xml string.</div>
+</td><td class="summaryTableOwnerCol">HaarClassifierFeature</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="inv_window_area"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inv_window_area</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var inv_window_area:Number</code><p>
+   inverse of scaled window area. 1/(width times height).  Used for normalization.
+   </p></div>
+<a name="leftIdx"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">leftIdx</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var leftIdx:int</code><p>
+   index in parent of left child feature.  May be NaN iff leftval != NaN
+   </p></div>
+<a name="leftval"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">leftval</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var leftval:Number</code><p>
+   Number to return if sums are less than threshold.  May be NaN iff leftIdx != NaN
+   </p></div>
+<a name="parent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var parent:<a href="../classifier/HaarClassifierTree.html">HaarClassifierTree</a></code><p>
+   parent HaarClassifierTree.  Used for tree traversal.
+   </p></div>
+<a name="rects"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rects</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rects:Array</code><p>
+   Array of HaarRect
+   </p></div>
+<a name="rightIdx"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rightIdx</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rightIdx:int</code><p>
+   index in parent of right child feature.  May be NaN iff rightval != NaN
+   </p></div>
+<a name="rightval"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rightval</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rightval:Number</code><p>
+   Number to return if sums are more than threshold.  May be NaN iff rightIdx != NaN
+   </p></div>
+<a name="threshold"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">threshold</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var threshold:Number</code><p>
+   threshold to compare sums against
+   </p></div>
+<a name="tilted"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">tilted</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var tilted:Boolean</code><p>
+   whether this feature is "tilted" 45 degrees
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="HaarClassifierFeature()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HaarClassifierFeature</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function HaarClassifierFeature()</code>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="evaluateSubImage()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">evaluateSubImage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function evaluateSubImage(ii:<a href="IntegralImage.html">IntegralImage</a>, r:Rectangle, vnorm:Number):Number</code><p>
+   evaluates this feature in the context of a search window.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">ii</span>:<a href="IntegralImage.html">IntegralImage</a></code> &mdash; IntegralImage to use for sums
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:Rectangle</code> &mdash; Rectangle window in which to look
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vnorm</span>:Number</code> &mdash; Number variance normalization factor.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; Number which is either leftval, rightval, or the result of evaluating a sibling feature
+   </td>
+</tr>
+</table>
+</div>
+<a name="fromXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fromXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function fromXML(xml:XML):<a href="../classifier/HaarClassifierFeature.html">HaarClassifierFeature</a></code><p>
+   read a feature from an xml node.  Intended to be compatible with OpenCV xml classifiers, but this project is NOT associated
+   with OpenCV
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">xml</span>:XML</code> &mdash; subtree representing a classifier feature
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../classifier/HaarClassifierFeature.html">HaarClassifierFeature</a></code> &mdash; 
+                        HaarClassifierFeature
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="setScale()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setScale</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setScale(w:int, h:int, r:Rectangle):void</code><p>
+   Scales this feature to the new size of a window
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">w</span>:int</code> &mdash; original window width
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:int</code> &mdash; original window height
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:Rectangle</code> &mdash; new Rectangle window.
+   </td>
+</tr>
+</table>
+</div>
+<a name="toXMLString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toXMLString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toXMLString():String</code><p>
+   serialize this feature to an xml string.  Intended to be compatible with OpenCV but not identical.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; String version of this classifier feature as xml
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
