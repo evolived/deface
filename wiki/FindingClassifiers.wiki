@@ -6,6 +6,8 @@ haarcascade_frontalface_alt.xml is the one used for most testing in development.
 
 = External Links =
 
+[http://note.sonots.com/?SciSoftware%2Fhaartraining] - A tutorial describing how to make your own.
+
 [http://www.intel.com/technology/computing/opencv/ OpenCV] - get it right from the horse's mouth
 
 [http://alereimondo.no-ip.org/OpenCV/34 misc classifiers] - Some seem to work, some don't.
