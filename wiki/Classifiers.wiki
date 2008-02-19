@@ -1,5 +1,3 @@
-#Where to find classifiers
-
 = Classifiers =
 
 Deface, like OpenCV, requires xml files describing classifiers which determine whether an image matches or not.  Why aren't any of them here?  Because each of the classifiers from OpenCV already has a license embedded into it, and I didn't know whether it was okay to rehost them as part of another project.  The good news is that most of them say it's okay to redistribute, so they are linked below.
