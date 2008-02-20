@@ -145,9 +145,11 @@ package com.suckatmath.detector.classifier {
 		 */
 		public function getRectSum(r:Rectangle):Number {
 			var toreturn:Number = sum[((r.y + r.height) * width) + r.x + r.width] - sum[(r.y * width) + r.x + r.width] - sum[(r.y + r.height) * width + r.x] + sum[(r.y * width) + r.x]  ;
+			/*
 			if (isNaN(toreturn)) {
 				throw new Error("nan sum generated for rect: " + r);
 			}
+			*/
 			return toreturn;
 		}
 		
@@ -168,10 +170,12 @@ package com.suckatmath.detector.classifier {
 			var b:Number = tiltsum[(y + h) * width + x - h] ;
 			var c:Number = tiltsum[y * width + x] ;
 			var d:Number = tiltsum[(y+w+h)*width + x + w -h];
-			var toreturn:Number = a + b - c - d;
+			var toreturn:Number = c + d - a - b; //a + b - c - d;
+			/*
 			if (isNaN(toreturn)) {
 				throw new Error("nan sum generated for tilt rect: " +r+" "+a+" "+b+" " +c+" "+d);
 			}
+			*/
 			return toreturn;
 		}
 		
@@ -186,9 +190,11 @@ package com.suckatmath.detector.classifier {
 			var c:Number = (r.y + r.height) * width + r.x;
 			var d:Number = sqsum[(r.y * width) + r.x];
 			var toreturn:Number = sqsum[((r.y + r.height) * width) + r.x + r.width] - sqsum[(r.y * width) + r.x + r.width] - sqsum[(r.y + r.height) * width + r.x] + sqsum[(r.y * width) + r.x]  ;
+			/*
 			if (isNaN(toreturn)) {
 				throw new Error("nan sqsum generated for rect: " + r +" a:" + a + " b:" + b + " c:" + c + " d:" + d + " sq[a]:"+sqsum[a]+" sq[b]:"+sqsum[b]+" sq[c]:"+sqsum[c]+" sq[d]:"+sqsum[d]+" sq.length:"+sqsum.length);
 			}
+			*/
 			return toreturn;
 
 		}
