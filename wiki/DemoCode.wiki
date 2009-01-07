@@ -2,7 +2,7 @@
 
 = Introduction =
 
-The download section contains a zip with the code necessary to build the DeFace demo program.
+The download section contains a zip with the code necessary to build the deface demo program.
 
 = Details =
 
